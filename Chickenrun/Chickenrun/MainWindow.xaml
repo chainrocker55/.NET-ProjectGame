@@ -1,0 +1,24 @@
+﻿<Window x:Class="Chickenrun.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chickenrun"
+        mc:Ignorable="d"
+        Title="ChickenRun" Height="450" Width="700" Icon="picture/1.png" ResizeMode="NoResize">
+    <Grid Width="700" Height="450" Margin="0,0,-6.4,-30" VerticalAlignment="Top" RenderTransformOrigin="0.517,0.441">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="272.8"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="134*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Content="Frame" Margin="-10,-35,10.347,35" Source="/Chickenrun;component/Login2.xaml" Grid.ColumnSpan="9" Width="700" Height="450" NavigationUIVisibility="Visible"/>
+
+    </Grid>
+</Window>

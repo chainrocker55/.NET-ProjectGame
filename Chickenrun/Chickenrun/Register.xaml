@@ -1,0 +1,36 @@
+﻿<Page x:Class="Chickenrun.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Chickenrun"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Register" Width="700" Height="450">
+
+    <Grid Width="700" Height="450">
+        <Grid.Background>
+            <ImageBrush ImageSource="picture/clouds-shining-in-sunlight-t2.jpg"/>
+        </Grid.Background>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Height="37" Margin="33,361,0,0" VerticalAlignment="Top" Width="76" FontWeight="Bold" Click="login1_Click" TabIndex="6" RenderTransformOrigin="2.304,1.205"/>
+        <Button x:Name="exsit" Content="Exsit" HorizontalAlignment="Left" Height="37" Margin="584,361,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-0.197,0.85" FontWeight="Bold" Click="exsit_Click" TabIndex="5" IsTabStop="False"/>
+        <Label Content="Usurname :" HorizontalAlignment="Left" Margin="172,170,0,0" VerticalAlignment="Top" Height="38" Width="114" FontSize="18" FontWeight="Bold" Foreground="#FFFAF7F7"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="172,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,2.131" Height="44" Width="98" FontSize="18" FontWeight="Bold" Foreground="#FFF9F6F6"/>
+        <Label Content="Chicken Run" Foreground="#FFF1DFDF" FontSize="36" FontFamily="OCR A Std" RenderTransformOrigin="0.5,0.5" Margin="213,50,174,344" Background="{x:Null}" FontWeight="Bold" IsTabStop="True">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.165"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.452"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="291,213,0,0" VerticalAlignment="Top" Height="37" Width="174" FontSize="18" TabIndex="2" IsTabStop="False"/>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="37" Margin="291,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="18" TabIndex="1" IsTabStop="False"/>
+        <Button x:Name="register" Content="Register" HorizontalAlignment="Left" Height="30" Margin="316,325,0,0" VerticalAlignment="Top" Width="106" Click="register_Click" FontWeight="Bold" IsTabStop="False" TabIndex="4"/>
+        <Label Content="RE-Password :" HorizontalAlignment="Left" Margin="142,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,2.131" Height="44" Width="128" FontSize="18" FontWeight="Bold" Foreground="#FFF9F6F6"/>
+        <PasswordBox x:Name="txtpassword2" HorizontalAlignment="Left" Margin="291,257,0,0" VerticalAlignment="Top" Height="37" Width="174" FontSize="18" TabIndex="3" IsTabStop="False"/>
+
+    </Grid>
+</Page>

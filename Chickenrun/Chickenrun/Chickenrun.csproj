@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C8B95E8-7590-46D2-A46A-28D9DE0345B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Chickenrun</RootNamespace>
+    <AssemblyName>Chickenrun</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.10.4\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.10.4\Assemblies\v4.5.2\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Character.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Character2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Character.xaml.cs">
+      <DependentUpon>Character.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Character2.xaml.cs">
+      <DependentUpon>Character2.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Over.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.xaml.cs">
+      <DependentUpon>Login2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Over.xaml.cs">
+      <DependentUpon>Over.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pet.xaml.cs">
+      <DependentUpon>Pet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\road1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\picture2\bot1.png" />
+    <Resource Include="picture\picture2\bot2.png" />
+    <Resource Include="picture\picture2\bot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\picture2\space_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\luffy1.png" />
+    <Resource Include="picture\character\luffy2.png" />
+    <Resource Include="picture\character\luffy3.png" />
+    <Resource Include="picture\character\luffy4.png" />
+    <Resource Include="picture\character\luffy5.png" />
+    <Resource Include="picture\character\luffy6.png" />
+    <Resource Include="picture\character\luffy7.png" />
+    <Resource Include="picture\character\luffy8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sasuke1.png" />
+    <Resource Include="picture\character\sasuke2.png" />
+    <Resource Include="picture\character\sasuke3.png" />
+    <Resource Include="picture\character\sasuke4.png" />
+    <Resource Include="picture\character\sasuke5.png" />
+    <Resource Include="picture\character\sasuke6.png" />
+    <Resource Include="picture\character\sasuke7.png" />
+    <Resource Include="picture\character\sasuke8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\green-35802_640.png" />
+    <Resource Include="picture\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\picture2\diso1.png" />
+    <Resource Include="picture\picture2\diso2.png" />
+    <Resource Include="picture\picture2\diso3.png" />
+    <Resource Include="picture\picture2\duck1.png" />
+    <Resource Include="picture\picture2\duck2.png" />
+    <Resource Include="picture\picture2\duck3.png" />
+    <Resource Include="picture\picture2\monkey1.png" />
+    <Resource Include="picture\picture2\monkey2.png" />
+    <Resource Include="picture\picture2\monkey3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\1.png" />
+    <Resource Include="picture\2.png" />
+    <Resource Include="picture\3.png" />
+    <Resource Include="picture\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\base.png" />
+    <Resource Include="picture\sky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\skyback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\Bot\chicken1.png" />
+    <Resource Include="picture\Bot\chicken2.png" />
+    <Resource Include="picture\Bot\chicken3.png" />
+    <Resource Include="picture\Bot\chicken4.png" />
+    <Resource Include="picture\Bot\chicken5.png" />
+    <Resource Include="picture\Bot\chicken6.png" />
+    <Resource Include="picture\Bot\chicken7.png" />
+    <Resource Include="picture\Bot\chicken8.png" />
+    <Resource Include="picture\Bot\chicken9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\naruto1.png" />
+    <Resource Include="picture\character\naruto2.png" />
+    <Resource Include="picture\character\naruto3.png" />
+    <Resource Include="picture\character\naruto4.png" />
+    <Resource Include="picture\character\naruto5.png" />
+    <Resource Include="picture\character\naruto6.png" />
+    <Resource Include="picture\character\naruto7.png" />
+    <Resource Include="picture\character\naruto8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sanji1.png" />
+    <Resource Include="picture\character\sanji2.png" />
+    <Resource Include="picture\character\sanji5.png" />
+    <Resource Include="picture\character\sanji6.png" />
+    <Resource Include="picture\character\sanji7.png" />
+    <Resource Include="picture\character\sanji8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sanji3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sanji4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sasuke9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\luffy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\naruto9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sonic1.png" />
+    <Resource Include="picture\character\sonic2.png" />
+    <Resource Include="picture\character\sonic3.png" />
+    <Resource Include="picture\character\sonic4.png" />
+    <Resource Include="picture\character\sonic5.png" />
+    <Resource Include="picture\character\sonic6.png" />
+    <Resource Include="picture\character\sonic7.png" />
+    <Resource Include="picture\character\sonic8.png" />
+    <Resource Include="picture\character\sonic9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\picture2\coin1.png" />
+    <Resource Include="picture\picture2\coin2.png" />
+    <Resource Include="picture\picture2\coin3.png" />
+    <Resource Include="picture\picture2\coin4.png" />
+    <Resource Include="picture\picture2\coin5.png" />
+    <Resource Include="picture\picture2\coin6.png" />
+    <Resource Include="picture\picture2\coin7.png" />
+    <Resource Include="picture\picture2\silver1.png" />
+    <Resource Include="picture\picture2\silver2.png" />
+    <Resource Include="picture\picture2\silver3.png" />
+    <Resource Include="picture\picture2\silver4.png" />
+    <Resource Include="picture\picture2\silver5.png" />
+    <Resource Include="picture\picture2\silver6.png" />
+    <Resource Include="picture\picture2\silver7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\character\sanji9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picture\abstract-fire-abstract-3d-cg-heat-hd-1080P-wallpaper-middle-size.jpg" />
+    <Resource Include="picture\picture2\kick1.png" />
+    <Resource Include="picture\picture2\kick2.png" />
+    <Resource Include="picture\picture2\kick3.png" />
+    <Resource Include="picture\picture2\kick4.png" />
+    <Resource Include="picture\picture2\kick5.png" />
+    <Resource Include="picture\picture2\kick6.png" />
+    <Resource Include="picture\Bot\bin1.png" />
+    <Resource Include="picture\Bot\bin2.png" />
+    <Resource Include="picture\Bot\bin3.png" />
+    <Resource Include="picture\Bot\bin4.png" />
+    <Resource Include="picture\Bot\bin5.png" />
+    <Resource Include="picture\Bot\bin6.png" />
+    <Resource Include="picture\clouds-shining-in-sunlight-t2.jpg" />
+    <Content Include="sound\316920__rudmer-rotteveel__chicken-single-alarm-call.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\341695__projectsu012__coins-1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\BIGSMSH.WAV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\Cookie Run Episode 4 BOUNUSTIME NIGHT Background-.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\swng.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
